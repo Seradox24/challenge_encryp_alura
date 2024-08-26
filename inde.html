@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto mati challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fc67cfdeab.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div style="display: flex; justify-content: center; align-items: center; ">
+        <h1 >Encriptador de Texto :) </h1>
+    </div>
+
+    <div class="container">
+        <!-- esta es la tarjetita para la entrada de texto y botones de encriptar y desencriptar -->
+        <div class="card">
+            <!-- campo de entrada de texto   -->
+            <textarea id="textoInput" rows="10" placeholder="Ingrese el texto aqui "></textarea>
+            <br>
+            <br>
+            <!-- boton para encriptar el texto -->
+            <button id="encriptarBtn">encriptar</button>
+            <!-- boton para desencriptar el texto -->
+            <button id="desencriptarBtn">desencriptar</button>
+            <br>
+            <p id="mensajeAviso">*|| Solo letras minúsculas y sin acentos (si no haces caso no respondo si fallo :v ). ||*</p>
+        </div>
+
+        <!-- Esta es la tarjetita para mostrar el resultado :) -->
+        <div id="resultado" class="card">
+            <!-- Imagen que aparece en el resultado, pero debería cambiarse por algo mas serio pero por ahora sera un gato hacker lml -->
+            <img src="/img/img.jpeg" alt="catimage" id="phImg">
+            <!-- Mensaje principal que muestra el texto encriptado/desencriptado | Mensaje secundario que da instrucciones al usuario | Botón para copiar el texto resultante al portapapeles  -->
+            <p id="mensajePrincipal">Ningún mensaje fue encontrado</p>
+            <p id="mensajeSecundario">Ingrese el texto que desea encriptar o desencriptar</p>
+            <button id="copiarBtn">copiar</button>
+        </div>
+    </div>
+
+    <!-- Sección del foooter -->
+    <footer id="rodapie">
+        Desarrollado por Mati (<°w°/) para el challenge de alura 2024 gen 7
+        <a href="https://www.linkedin.com/in/matias-inayao-poveda-916920162" target="_blank" class="social-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </footer>
+    
+
+    <!-- Archivo JavaScript  -->
+    <script src="js/index.js"></script>
+</body>
+</html>

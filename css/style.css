@@ -1,0 +1,193 @@
+body {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: #d483273a; /* Color de fondo de la página su narajanita piola  */
+}
+
+
+
+   .container {
+    /* stilo para el contenedor principal */
+    display: flex;
+    justify-content:  center;
+    align-items: flex-start;
+    gap: 2.5rem; /* Espacio entre las columnas*/
+    flex-wrap: wrap; /* recordatorio |Asegura que las columnas se ajusten al tamaño de la pantalla | .-. */
+}
+
+
+.card {
+    /* stilo para las cards */
+    background-color: #fffffff3; 
+    border: 1px solid #0e0404;
+    border-radius:  0.5rem;
+    padding: 1.5rem;
+    box-shadow:  0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    flex:1;
+    max-width: 100%;
+    min-width:  300px; /*Ancho mínimo para que las tarjetas no se hagan demasiado pequeñitas*/
+}
+
+
+#textoInput {
+    /* stilo para la entrada de texto */
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    color: rgb(3, 134, 3);
+    box-sizing: border-box; /* Asegura que el padding no haga que el textarea se salga */
+}
+
+
+#textoInput::placeholder {
+    color: rgb(4, 129, 4);
+    font-size:1.25rem;
+
+}
+
+
+
+#encriptarBtn, #desencriptarBtn {
+    /* stilo para los botones de encriptar y desencriptar */
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+#encriptarBtn:hover, #desencriptarBtn:hover {
+    /* stilo para el botón cuando pasa el ratón por encima */
+    background-color: #378a3b;
+}
+
+
+#mensajeAviso {
+    font-size: 0.875rem;
+    color: #727171;
+    margin-top: 0.5rem;
+}
+
+
+#resultado {
+    /* stilo para la tarjeta de resultado no logre que quedara como queria que quedara jajaj T_T */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #000000;
+    position: relative;
+    max-width: 100%;
+    min-width: 300px;
+    max-height: 100%;
+    min-height: 340px;
+    width: 90%;
+    height: 90%;
+}
+
+
+#resultado img {
+    /* stilo para la imagen del cat*/
+    max-width: 60%;
+    margin-bottom: 1.25rem;
+}
+
+
+
+
+#mensajePrincipal {
+    /* stilo para el mensajito principal */
+    font-size: 2rem;
+    color: #21b80d;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+
+#mensajeSecundario {
+    /* stilo para el mensajitp secundario */
+    font-size: 0.8rem;
+    color: #1a4b0e;
+    margin-bottom: 1rem;
+}
+
+
+#copiarBtn {
+    /* stilo para el botón de copiar */
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    display: none; /* Inicialmente oculto */
+}
+
+#copiarBtn:hover {
+    /* stilo para el botón de copiar cuando pasa el ratón por encima */
+    background-color: #45a049;
+}
+
+
+
+#phImg {
+    /* stilo 2 para la imagen del cat */
+    width: 100%;
+    height: auto; /* Asegura que la imagen mantenga su proporción original */
+    border-radius: 70%;
+    object-fit: cover; /* Asegura que la imagen se recorte bien */
+    display: block; /* Elimina espacios innecesarios alrededor de la imagen */
+}
+
+/*footer*/
+#rodapie {
+    /* stilo para el f0tter */
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+/* Media Query para hacer la página responsive */
+@media (max-width: 800px) {
+    .container {
+
+        flex-direction:column;
+        align-items:center;
+
+        gap: 1.5rem;
+
+    }
+    .card {
+        max-width: 100%;
+
+        min-width: auto; /* Se elimina el ancho mínimo cuando en modo de columna */
+    }
+    #resultado {
+
+        flex-direction: column;
+        max-width: 100%;
+
+        min-width: auto; 
+    }
+
+
+
+}
